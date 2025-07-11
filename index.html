@@ -5,91 +5,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoBelajar - Homepage</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav><img src="" alt="logo">
-        <ul>
-            <li>
-                <a href="#">Kategori</a>
-            </li>
-            <li><img src="" alt="profile"></li>
-        </ul>
-    </nav>
-    <div>
-        <h1>Revolusi Pembelajaran: Temukan Ilmu Baru Melalui Platform Video Interaktif</h1>
-        <p>Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran berkualitas tinggi. Tidak
-            hanya itu.
-            Anda juga dapat berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda.
-        </p>
-        <button class="">Temukan Video Course untuk Dipelajari</button>
-    </div>
-    <section>
-        <h2>Koleksi Video Pembelajaran Unggulan</h2>
-        <span>Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</span>
-        <div>
-            <ul>
-                <li><a href="#">Semua Kelas</a></li>
-                <li><a href="#">Pemasaran</a></li>
-                <li><a href="#">Desain</a></li>
-                <li><a href="#">Pengembangan Diri</a></li>
-                <li><a href="#">Bisnis</a></li>
-            </ul>
-        </div>
-        <div>
-            <div class="card">
-                <h4>Big 4 Auditor Financial Analyst</h4>
-                <p>Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...</p>
+    <header>
+        <div class="container-header">
+            <div id="logo">
+                <img src="/assets/img/logo.png" alt="logo">
             </div>
-
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#">Kategori</a></li>
+                    <li class="nav-item avatar">
+                        <img src="assets/img/avatar-beranda.png" alt="User Profile" class="avatar-profile">
+                    </li>
+                    <li class="nav-item mobile-menu">
+                        <img src="assets/img/navbar-menu.png" alt="Mobile Menu" class="mobile-icon">
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div><span>NEWSLETTER</span>
-            <h1>MAU BELAJAR LEBIH BANYAK?</h1>
-            <p>Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran special dari program-program terbaik
-                hariesok.id</p>
-            <input type="email" placeholder="Masukkan Emailmu">
-            <button>Subscribe</button>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Revolusi Pembelajaran: Temukan Ilmu Baru Melalui Platform Video Interaktif</h1>
+            <p class="hero-description">Temukan ilmu baru yang menarik dan mendalam melalui koleksi video pembelajaran
+                berkualitas tinggi. Tidak
+                hanya itu.
+                Anda juga dapat berpartisipasi dalam latihan interaktif yang akan meningkatkan pemahaman Anda.
+            </p>
+            <button class="btn btn-primary">Temukan Video Course untuk Dipelajari!</button>
+        </div>
+    </section>
+    <section class="courses">
+        <h2>Koleksi Video Pembelajaran Unggulan</h2>
+        <p class="course-description">Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
+        <ul class="course-categories">
+            <li><a href="#" class="category active">Semua Kelas</a></li>
+            <li><a href="#" class="category">Pemasaran</a></li>
+            <li><a href="#" class="category">Desain</a></li>
+            <li><a href="#" class="category">Pengembangan Diri</a></li>
+            <li><a href="#" class="category">Bisnis</a></li>
+        </ul>
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="card-header-container">
+                    <img src="/assets/img/card-content.jpg" alt="Big 4 Auditor Financial Analyst"
+                        class="course-content">
+                    <div class="card-header">
+                        <h3 class="title">Big 4 Auditor Financial Analyst</h3>
+                        <p class="description">Mulai transformasi dengan instruktur profesional, harga yang terjangkau,
+                            dan
+                            kurikulum terbaik.
+                        </p>
+                        <div class="instructor">
+                            <img src="/assets/img/card-avatar.png" alt="Jenna Ortega" class="instructor-avatar">
+                            <div class="instructor-detail">
+                                <span class="instructor-name">Jenna Ortega</span>
+                                <p>Senior Accountant <span class="company">di Gojek</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="rating">
+                        <span class="rating-stars">★★★★☆</span> <span class="rating-count">3.5 (86)</span>
+                    </div>
+                    <div class="price">Rp 300K</div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <div class="newsletter-content">
+                <span>NEWSLETTER</span>
+                <h1>Mau Belajar Lebih Banyak?</h1>
+                <p class="newsletter-description">Daftarkan dirimu untuk mendapatkan informasi terbaru dan
+                    penawaran special dari program-program terbaik hariesok.id</p>
+                <div class="newsletter-email">
+                    <input type="email" class="email" placeholder="Masukkan Emailmu">
+                    <button>Subscribe</button>
+                </div>
+                <button class="subscribe">Subscribe</button>
+            </div>
         </div>
     </section>
     <footer>
-        <div>
-            <img src="" alt="logo">
-            <h4>Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id</h4>
-            <p>Jl. Usman Effendi No.50 Lowokwaru, Malang</p>
-            <p>+62-877-7123-1234</p>
-            <div>
-                <h4>Kategori</h4>
-                <ul>
-                    <li><a href="#">Digital % Teknologi</a></li>
-                    <li><a href="#">Pemasaran</a></li>
-                    <li><a href="#">Manajemen Bisnis</a></li>
-                    <li><a href="#">Pengembangan Diri</a></li>
-                    <li><a href="#">Desain</a></li>
-                </ul>
+        <div class="footer-content">
+            <div class="footer-info">
+                <img src="/assets/img/footer-logo.png" alt="logo">
+                <h4>Gali Potensi Anda Melalui Pembelajaran Video di hariesok.id!</h4>
+                <p>Jl. Usman Effendi No.50 Lowokwaru, Malang</p>
+                <p>+62-877-7123-1234</p>
             </div>
-            <div>
-                <h4>Perusahaan</h4>
-                <ul>
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Kebijakan Privasi</a></li>
-                    <li><a href="#">Ketentuan Layanan</a></li>
-                    <li><a href="#">Bantuan</a></li>
-                </ul>
+            <div class="footer-links">
+                <div>
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="#">Digital & Teknologi</a></li>
+                        <li><a href="#">Pemasaran</a></li>
+                        <li><a href="#">Manajemen Bisnis</a></li>
+                        <li><a href="#">Pengembangan Diri</a></li>
+                        <li><a href="#">Desain</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Ketentuan Layanan</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Komunitas</h4>
+                    <ul>
+                        <li><a href="#">Tips Sukses</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h4>Komunitas</h4>
-                <ul>
-                    <li><a href="#">Tips Sukses</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
+            <div class="footer-links-mobile">
+                <div class="link-item">
+                    <div class="link-item-content">
+                        <span class="link-item-title">Kategori</span><i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="link-item">
+                    <div class="link-item-content">
+                        <span class="link-item-title">Perusahaan</span><i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="link-item">
+                    <div class="link-item-content">
+                        <span class="link-item-title">Komunitas</span><i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <p>@2023 Gerobaks All Rights Reserved</p>
-            <a href="#"></a>
+            <div class="divider">
+                <hr>
+            </div>
+            <div class="footer-bottom">
+                <p>@2023 Gerobaks All Rights Reserved</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
