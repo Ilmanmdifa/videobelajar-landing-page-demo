@@ -5,41 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoBelajar - Register</title>
+    <link rel="stylesheet" href="assets/css/auth.css">
 </head>
 
 <body>
-    <header><img src="" alt="logo"></header>
-    <div>
-        <h1>Pendaftaran Akun</h1>
-        <p>Yuk, daftarkan akunmu sekarang juga!</p>
-        <div>
-            <label for="name">Nama Lengkap <span>*</span>
-                <input type="text">
-            </label>
-            <label for="email">Email <span>*</span>
-                <input type="email" name="" id="">
-            </label>
-            <label for="hp">No. Hp <span>*</span>
-                <select name="" id="">
-                    <option value="62">+62</option>
-                </select>
-                <input type="number" name="" id="" max="12">
-            </label>
-            <label for="password">Kata Sandi <span>*</span>
-                <input type="password" name="" id="">
-                logo
-            </label>
-            <label for="password">Konfirmasi Kata Sandi <span>*</span>
-                <input type="password" name="" id="">
-                logo
-            </label>
-            <a href="#">Lupa Password?</a>
-            <button>Masuk</button>
-            <button>Daftar</button>
-            <p>Atau</p>
-            <button>Masuk Dengan Google</button>
+    <header><img src="/assets/img/logo-test.png" alt="logo"></header>
+    <main class="container-register">
+        <div class="register-header">
+            <h1 class="register-title">Pendaftaran Akun</h1>
+            <p class="register-description">Yuk, daftarkan akunmu sekarang juga!</p>
         </div>
-    </div>
+        <form action="" class="register-form">
+            <div class="register-item">
+                <label for="name">Nama Lengkap <span>*</span></label>
+                <input type="text" id="name" class="register-input" required>
+            </div>
+            <div class="register-item">
+                <label for="email">E-mail <span>*</span></label>
+                <input type="email" class="register-input" name="" id="email">
+            </div>
+            <div class="register-item gender">
+                <label for="gender">Jenis kelamin <span>*</span></label>
+                <select name="" id="" class="register-input">
+                    <option value="perempuan">Perempuan</option>
+                    <option value="laki-laki">Laki-laki</option>
+                </select>
+            </div>
+            <div class="register-item phone">
+                <label for="hp">No. Hp <span>*</span>
+                </label>
+                <div class="hp-container">
+                    <div class="flags-container">
+                        <div class="flags">
+                            <img src="/assets/img/indonesia.png" alt="Indonesia Flag">
+                        </div>
+                        <select name="" id="" class="register-input phone-area">
+                            <option value="62">
+                                +62
+                            </option>
+                        </select>
+                    </div>
+                    <input type="text" class="register-input" name="" id="" max="12">
+                </div>
+            </div>
+            <div class="register-item confirm-password">
+                <label for="password">
+                    Kata Sandi <span>*</span>
+                </label>
+                <input type="password" class="register-input" name="" id="">
+            </div>
+            <div class="register-item confirm-password">
+                <label for="password">
+                    Konfirmasi Kata Sandi <span>*</span>
+                </label>
+                <input type="password" class="register-input" name="" id="">
+            </div>
+            <div class="register-item footer">
+                <a href="#">Lupa Password?</a>
+                <button class="btn btn-register">Daftar</button>
+                <button class="btn btn-login">Masuk</button>
+                <div class="divider">
+                    <img src="/assets/img/Divider.png" alt="divider">
+                    <span class="or">atau</span>
+                    <img src="/assets/img/Divider.png" alt="divider">
+                </div>
+                <button class="btn btn-google"><img src="/assets/img/logos_google-icon.png" alt="google-icon">Daftar
+                    dengan Google</button>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>
