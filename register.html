@@ -10,28 +10,28 @@
 
 <body>
     <header><img src="/assets/img/logo-test.png" alt="logo"></header>
-    <main class="container-register">
-        <div class="register-header">
-            <h1 class="register-title">Pendaftaran Akun</h1>
-            <p class="register-description">Yuk, daftarkan akunmu sekarang juga!</p>
+    <main class="container-auth">
+        <div class="auth-header">
+            <h1 class="auth-title">Pendaftaran Akun</h1>
+            <p class="auth-description">Yuk, daftarkan akunmu sekarang juga!</p>
         </div>
-        <form action="" class="register-form">
-            <div class="register-item">
+        <form action="" class="auth-form">
+            <div class="auth-item">
                 <label for="name">Nama Lengkap <span>*</span></label>
-                <input type="text" id="name" class="register-input" required>
+                <input type="text" id="name" class="auth-input" required>
             </div>
-            <div class="register-item">
+            <div class="auth-item">
                 <label for="email">E-mail <span>*</span></label>
-                <input type="email" class="register-input" name="" id="email">
+                <input type="email" class="auth-input" name="" id="email">
             </div>
-            <div class="register-item gender">
+            <div class="auth-item gender">
                 <label for="gender">Jenis kelamin <span>*</span></label>
-                <select name="" id="" class="register-input">
+                <select name="" id="" class="auth-input">
                     <option value="perempuan">Perempuan</option>
                     <option value="laki-laki">Laki-laki</option>
                 </select>
             </div>
-            <div class="register-item phone">
+            <div class="auth-item phone">
                 <label for="hp">No. Hp <span>*</span>
                 </label>
                 <div class="hp-container">
@@ -39,38 +39,40 @@
                         <div class="flags">
                             <img src="/assets/img/indonesia.png" alt="Indonesia Flag">
                         </div>
-                        <select name="" id="" class="register-input phone-area">
+                        <select name="" id="" class="auth-input phone-area">
                             <option value="62">
                                 +62
                             </option>
                         </select>
                     </div>
-                    <input type="text" class="register-input" name="" id="" max="12">
+                    <input type="text" class="auth-input" name="" id="" max="12">
                 </div>
             </div>
-            <div class="register-item confirm-password">
+            <div class="auth-item confirm-password">
                 <label for="password">
                     Kata Sandi <span>*</span>
                 </label>
-                <input type="password" class="register-input" name="" id="">
+                <input type="password" class="auth-input" name="" id="">
             </div>
-            <div class="register-item confirm-password">
+            <div class="auth-item confirm-password">
                 <label for="password">
                     Konfirmasi Kata Sandi <span>*</span>
                 </label>
-                <input type="password" class="register-input" name="" id="">
+                <input type="password" class="auth-input" name="" id="">
             </div>
-            <div class="register-item footer">
+            <div class="auth-item footer">
                 <a href="#">Lupa Password?</a>
-                <button class="btn btn-register">Daftar</button>
-                <button class="btn btn-login">Masuk</button>
+                <button class="btn btn-secondary">Daftar</button>
+                <button class="btn btn-primary">Masuk</button>
                 <div class="divider">
                     <img src="/assets/img/Divider.png" alt="divider">
                     <span class="or">atau</span>
                     <img src="/assets/img/Divider.png" alt="divider">
                 </div>
-                <button class="btn btn-google"><img src="/assets/img/logos_google-icon.png" alt="google-icon">Daftar
-                    dengan Google</button>
+                <button class="btn btn-google">
+                    <img src="/assets/img/logos_google-icon.png" alt="google-icon">
+                    Daftar dengan Google
+                </button>
             </div>
         </form>
     </main>
