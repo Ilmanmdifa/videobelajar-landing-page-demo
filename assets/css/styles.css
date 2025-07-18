@@ -186,6 +186,7 @@ body {
 
 .category {
   text-decoration: none;
+  color: rgba(51, 51, 51, 0.68);
   font-size: 16px;
 }
 
@@ -688,8 +689,8 @@ body {
   }
 
   .course-content-img {
-    width: 82px;
-    height: 82px;
+    max-width: 82px;
+    max-height: 82px;
   }
 
   .card-content-container {
