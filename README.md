@@ -1,6 +1,6 @@
 # VideoBelajar Simple Responsive
 
-## Layout
+## Layout (Desktop and Mobile)
 - Homepage
 - Login
 - Register
