@@ -5,25 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoBelajar - Login</title>
+    <link rel="stylesheet" href="assets/css/auth.css">
 </head>
-<header><img src="" alt="logo"></header>
-<div>
-    <h1>Masuk Ke Akun</h1>
-    <p>Yuk, lanjutin belajarmu di videobelajar.</p>
-    <div>
-        <label for="email">E-Mail
-            <input type="email">
-        </label>
-        <label for="password">Kata Sandi
-            <input type="password" name="" id="">
-        </label>
-        <a href="#">Lupa Password?</a>
-        <button>Masuk</button>
-        <button>Daftar</button>
-        <p>Atau</p>
-        <button>Masuk Dengan Google</button>
+<header><img src="assets/img/logo-test.png" alt="logo"></header>
+<main class="container-auth">
+    <div class="auth-header">
+        <h1 class="auth-title">Masuk Ke Akun</h1>
+        <p class="auth-description">Yuk, lanjutin belajarmu di videobelajar.</p>
     </div>
-</div>
+    <div class="auth-form">
+        <div class="auth-item">
+            <label for="email">
+                E-Mail
+                <span>*</span>
+            </label>
+            <input type="email" class="auth-input">
+        </div>
+        <div class="auth-item">
+            <label for="password">
+                Kata Sandi
+                <span>*</span>
+            </label>
+            <div class="auth-item login-password">
+                <input type="password" class="auth-input" name="" id="">
+            </div>
+        </div>
+        <div class="auth-item footer">
+            <a href="#">Lupa Password?</a>
+            <button class="btn btn-secondary">Masuk</button>
+            <button class="btn btn-primary">Daftar</button>
+            <div class="divider">
+                <img src="assets/img/Divider.png" alt="divider">
+                <p class="or">atau</p>
+                <img src="assets/img/Divider.png" alt="divider">
+            </div>
+            <button class="btn btn-google">
+                <img src="/assets/img/logos_google-icon.png" alt="google-icon">
+                Masuk Dengan Google
+            </button>
+        </div>
+    </div>
+</main>
 
 <body>
 
